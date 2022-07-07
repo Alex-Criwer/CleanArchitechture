@@ -8,6 +8,7 @@ import com.example.cleanarchitecture.data.storage.SharedPrefUserStorage
 import com.example.cleanarchitecture.domain.usecases.GetUserNameUseCase
 import com.example.cleanarchitecture.domain.usecases.SaveUserNameUseCase
 
+// это если не через di
 class MainViewModelFactory(context: Context): ViewModelProvider.Factory {
     private val userStorage by lazy { SharedPrefUserStorage(context = context) }
     private val repositoryImpl  by lazy { UserRepositoryImpl(userStorage = userStorage) }
