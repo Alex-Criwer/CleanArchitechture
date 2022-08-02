@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.di
+package com.example.cleanarchitecture.di_koin
 
 import com.example.cleanarchitecture.presentation.MainViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

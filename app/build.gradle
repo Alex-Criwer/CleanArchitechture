@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -51,4 +52,9 @@ dependencies {
     testImplementation "io.insert-koin:koin-test:$koin_version"
     // Koin main features for Android
     implementation "io.insert-koin:koin-android:$koin_version"
+
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.40.1'
+    kapt 'com.google.dagger:dagger-compiler:2.40.1'
+    implementation 'javax.inject:javax.inject:1'
 }

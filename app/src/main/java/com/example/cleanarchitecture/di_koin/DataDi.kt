@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.di
+package com.example.cleanarchitecture.di_koin
 
 import com.example.cleanarchitecture.data.repository.UserRepositoryImpl
 import com.example.cleanarchitecture.data.storage.SharedPrefUserStorage

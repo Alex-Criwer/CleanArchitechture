@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.di
+package com.example.cleanarchitecture.di_koin
 
 import com.example.cleanarchitecture.domain.usecases.GetUserNameUseCase
 import com.example.cleanarchitecture.domain.usecases.SaveUserNameUseCase
