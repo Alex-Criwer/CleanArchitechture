@@ -11,8 +11,10 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
 // тут мы запустим di, каждый раз при входе в приложение
+
+//@HiltAndroidApp
 class App: Application() {
-    lateinit var appComponent: AppComponent
+    //lateinit var appComponent: AppComponent
 
     override fun onCreate() {
         super.onCreate()

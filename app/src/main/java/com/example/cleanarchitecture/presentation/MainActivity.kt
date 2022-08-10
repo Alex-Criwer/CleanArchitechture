@@ -8,12 +8,14 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.cleanarchitecture.R
 import com.example.cleanarchitecture.app.App
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import javax.inject.Inject
 
 
+//@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     // для даггера
@@ -23,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     //для Koin
     private val vm by viewModel<MainViewModel>()
+
+    // для Hilt
+    //private val vm: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

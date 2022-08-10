@@ -8,12 +8,14 @@ import com.example.cleanarchitecture.data.storage.SharedPrefUserStorage
 import com.example.cleanarchitecture.domain.models.SaveUserNameParam
 import com.example.cleanarchitecture.domain.usecases.GetUserNameUseCase
 import com.example.cleanarchitecture.domain.usecases.SaveUserNameUseCase
+import javax.inject.Inject
 
 // хранит в себе состояние активити
 
 // view model должна быть без контекста! она ничего не знает об активити! + из нее ничего не возвращаем
 
-class MainViewModel(
+//@HiltViewModel
+class MainViewModel /*@Inject constructor*/(
     private val getUserNameUseCase: GetUserNameUseCase,
     private val saveUserNameUseCase: SaveUserNameUseCase
 ): ViewModel() {
